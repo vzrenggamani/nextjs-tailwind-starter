@@ -1,6 +1,11 @@
 {
   "name": "nextjs-tailwind-starter",
   "private": true,
+  "version": "0.0.0",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
