@@ -7,9 +7,13 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "eslint src --fix && yarn format",
+    "lint:full": "eslint --max-warnings 0 src",
+    "tsc": "tsc",
     "format": "prettier --ignore-path .gitignore -w .",
-    "prepare": "husky install",
-    "release": "standard-version"
+    "format:check": "prettier --check --ignore-path .gitignore .",
+    "release": "standard-version",
+    "push-release": "git push --follow-tags origin main",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "12.0.7",
